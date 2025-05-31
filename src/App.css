@@ -1,0 +1,124 @@
+/* Định dạng chung cho toàn bộ ứng dụng */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chính */
+div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tiêu đề chính */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+/* Tiêu đề của từng section */
+h2 {
+  color: #007bff;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Định dạng cho các section chứa demo */
+section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng cho input */
+input {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Định dạng cho button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Định dạng cho danh sách trong DataFetchDemo */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 1em;
+  color: #333;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Định dạng cho trạng thái loading và error */
+p {
+  font-size: 1.1em;
+  color: #555;
+  text-align: center;
+}
+
+/* Định dạng cho output trong FormDemo */
+h3 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  div {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  input, button {
+    font-size: 0.9em;
+  }
+}
